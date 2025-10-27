@@ -16,6 +16,12 @@ public class Test {
             System.out.println("Le nombre est nul.");
         }
 
+	if (nombre % 2 == 0) {
+            System.out.println("Le nombre est pair");
+        } else {
+            System.out.println("Le nombre est impair");
+        }
+
         scanner.close();
     }
 }
