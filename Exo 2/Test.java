@@ -1,19 +1,21 @@
 import java.util.Scanner;
 
-public class Hello {
+public class Test {
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); 
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Bonjour et bienvenue dans mon programme Java !");
+        System.out.print("Entrez un nombre entier : ");
+        int nombre = scanner.nextInt();
 
-        System.out.print("Quel est votre nom ? ");
-        String nom = scanner.nextLine();
+        if (nombre > 0) {
+            System.out.println("Le nombre est positif.");
+        } else if (nombre < 0) {
+            System.out.println("Le nombre est négatif.");
+        } else {
+            System.out.println("Le nombre est nul.");
+        }
 
-	System.out.print("Quel est votre prenom ? ");
-        String prenom = scanner.nextLine();  
-
-        System.out.println("Salut " + nom + " " + prenom + " !");
-        
         scanner.close();
     }
 }
